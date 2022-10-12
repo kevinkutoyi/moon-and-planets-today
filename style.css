@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+   border:none;
+   font-family: 'Poppins', sans-serif;
+ }
+ body{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; */
+ }
+
+ html{
+     font-size:62.5%;
+ }
+ .main-container{
+    /* background-color: #020303f1; */
+    background-color: black;
+ }
+
+ .all{
+   width:100%;
+   min-height:100vh;
+   background-color: #020303f1;
+
+   display:flex;
+   justify-content: center;
+   align-items: center;
+
+ }   
+
+ .all>h3{
+     position:absolute;
+     bottom:3%;
+     left:50%;
+     transform: translateX(-50%);
+
+     color:#fefefe;
+     font-size:2rem;
+     font-weight:100;
+     letter-spacing: 0.2rem;
+
+     animation:animationThree 9s linear infinite;
+
+ }
+
+ .container{
+     position: relative;
+
+     width:75vh;
+     height:75vh;
+     
+     
+
+     background-color: #020303f1;
+     border-radius: 20%;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     
+ }
+
+ .circle-1{
+     width:80%;
+     height:80%;
+     border-radius:50%;
+     border:1px solid #fefefe;
+
+     position:absolute;
+     animation: animationOne 20s linear infinite;
+    
+
+     
+ }
+
+ .circle-2{
+     width:60%;
+     height:60%;
+     border-radius:50%;
+     border:1px solid #fefefe;
+
+     position:absolute;
+     animation:animationOne 10s ease-in-out infinite;
+    
+ }
+
+ .circle-3{
+     width:40%;
+     height:40%;
+     border-radius:50%;
+     border:1px solid #fefefe;
+     
+     position:absolute;
+     animation:animationOne 6.3s .6s linear infinite;
+     
+ }
+
+ .circle-4{
+     width:10%;
+     height:10%;
+     border-radius:50%;
+     border:1px solid #fefefe;
+     background-color: #fefefe;
+
+     position:absolute;
+     animation:animationTwo 15s linear infinite;
+ }
+
+ .circle-1::before{
+     content:'';
+     position:absolute;
+
+     width:10px;
+     height:10px;
+     border-radius:50%;
+     background-color: #52e735;
+     box-shadow:0 0 20px #52e735;
+
+     top:0%;
+     left:50%;
+     transform:translate(-50%, -50%);
+    
+
+    
+ }
+
+ .circle-2::before{
+     content:'';
+     position:absolute;
+
+     width:10px;
+     height:10px;
+     border-radius:50%;
+     background-color: #daf012;
+     box-shadow:0 0 20px #daf012;
+
+     top:0%;
+     left:50%;
+     transform:translate(-50%, -50%)
+ }
+
+ .circle-3::before{
+     content:'';
+     position:absolute;
+
+     width:10px;
+     height:10px;
+     border-radius:50%;
+     background-color: #f10b45;
+     box-shadow:0 0 20px #f10b45;
+
+     top:0%;
+     left:50%;
+     transform:translate(-50%, -50%);
+    
+ }
+
+ @keyframes animationOne{
+   0%{
+       transform: rotate(0deg);
+   }
+   100%{
+       transform: rotate(360deg);
+   }
+
+ }
+
+ @keyframes animationTwo{
+     0%, 100%{
+       background-color: #52e735;
+       border:1px solid #52e735;
+       box-shadow:0 0 20px #52e735;
+     }
+
+     33.33%{
+       background-color: #daf012;
+       border:1px solid #daf012;
+       box-shadow:0 0 20px #daf012;
+
+     }
+
+     66.66%{
+       background-color: #f10b45;
+       border:1px solid #f10b45;
+       box-shadow:0 0 20px #f10b45;
+     }
+
+    
+ }
+
+ 
+ @keyframes animationThree{
+     0%, 100%{
+       color: #52e735;
+       
+     }
+
+     33.33%{
+       color: #daf012;
+       
+
+     }
+
+     66.66%{
+       color: #f10b45;
+       
+     }
+
+    
+ }
+#title{
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+}
+#my-statement{
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+.today-date{
+    color: #fff;
+    text-align: center;
+    visibility: hidden;
+}
+#explanation{
+    text-align: center;
+    min-width: 60%;
+    margin: auto;
+    color: #fff;
+    padding: 2em;
+    font-size: 2em;
+    position: absolute;
+    top: 650px;
+    display: flex;
+    align-items: center;
+}
