@@ -4,7 +4,7 @@ document.getElementById('today-date').innerHTML = `${d.getDate()} : ${d.getMonth
 
 if(d.getDate() === 12 || d.getMonth() === 9){
     document.getElementById("my-statement").innerHTML = "Today's moon is full moon"
-    document.getElementById("explanation").innerHTML = "New moon signifies the beginning of new month and life. It can be relationship, project, activity and a new chapter"
+    document.getElementById("explanation").innerHTML = "It can be relationship, project, activity and a new chapter"
 }
 // let day;
 // switch (new Date().getDay()) {
